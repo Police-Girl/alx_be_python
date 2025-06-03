@@ -1,4 +1,4 @@
 hours = 2
 seconds = 3600
-product = hours * seconds
-print (f"{hours} hour(s) is {product} seconds")
+seconds = hours * seconds
+print (f"{hours} hour(s) is {seconds} seconds")
