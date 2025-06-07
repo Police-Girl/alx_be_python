@@ -1,3 +1,6 @@
-number = int(input("Enter a number to see its multiplication table:"))
-for i in range(1,11):
-	print(number,"*",i,"=",i * number)
+tableNum = int(input("Enter a number to see its multiplication table:"))
+tableSize = range (1,11)
+#results = tableNum * tableSize
+for x in tableSize:
+	print(f"{tableNum} * {x} = {tableNum * x}")
+
