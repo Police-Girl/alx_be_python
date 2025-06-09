@@ -9,6 +9,6 @@ match priority:
 	case "low":
 		print(f"{task}, is a  low priority task. Consider completing it when you have free time.")
 if time_bound == "yes":
-	print(f"The task is time-bound.")
+	print(f"Reminder: Don't forget: {task}.")
 if time_bound == "no":
 	print (f"The task is not time-bound")
