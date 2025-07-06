@@ -19,9 +19,9 @@ class SimpleCalculator():
 		return a / b
 
 class TestAdd(unittest.TestCase):
-	def test_add(self):
+	def test_addition(self):
 		result = add(4, 5)
-		self.assertEqual(result , 9)
+		self.assertEqual(self.calc.add)
 
 	def test_subtract(self):
 		result = subtract(10, 4)
