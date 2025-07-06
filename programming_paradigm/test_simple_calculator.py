@@ -1,7 +1,7 @@
 import unittest
 from simple_calculator import SimpleCalculator
 
-class TestSimpleCalculator(unittest.TestCase):
+class SimpleCalculator(unittest.TestCase):
 	def add(a,b):
 		"""Return the sum of two numbers"""
 		return a + b
