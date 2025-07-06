@@ -9,3 +9,4 @@ def safe_divide(numerator,denominator):
 		return result
 	except ZeroDivisionError:
 		return f"Error: Cannot divide by zero."
+	
