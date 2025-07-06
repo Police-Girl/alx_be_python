@@ -11,7 +11,7 @@ class TestSimpleCalculator(unittest.TestCase):
 		#result = add(4, 5)
 		self.assertEqual(self.calc.add (10 , 10), 20)
 		self.assertEqual(self.calc.add (-1,1),  0)
-
+		self.assertEqual(self.calc.add (0,0),0)
 	def test_subtract(self):
 		"""Return the difference between a and b"""
 		#result = subtract(10, 4)
