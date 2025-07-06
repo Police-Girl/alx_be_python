@@ -1,19 +1,22 @@
 import unittest
-def add(a,b):
-	"""Return the sum of two numbers"""
-	return a + b
+from simple_calculator import SimpleCalculator
 
-def subtract (a,b):
-	"""Return the difference of two numbers"""
-	return a - b
+class TestSimpleCalculator(unittest.TestCase):
+	def add(a,b):
+		"""Return the sum of two numbers"""
+		return a + b
 
-def multiply (a, b):
-	"""Return the product of two numbers"""
-	return a * b
+	def subtract (a,b):
+		"""Return the difference of two numbers"""
+		return a - b
 
-def divide (a , b):
-	"""return the  modulus of two numbers"""
-	return a / b
+	def multiply (a, b):
+		"""Return the product of two numbers"""
+		return a * b
+
+	def divide (a , b):
+		"""return the  modulus of two numbers"""
+		return a / b
 
 class TestAdd(unittest.TestCase):
 	def test_add(self):
