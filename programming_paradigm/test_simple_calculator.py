@@ -6,10 +6,11 @@ class TestSimpleCalculator(unittest.TestCase):
 		"""Sets up a new SimpleCalculatoe instance for each test."""
 		self.calc = SimpleCalculator()
 
-	def test_add(self):
+	def test_addition(self):
 		""" Return the addition of a and b"""
 		#result = add(4, 5)
 		self.assertEqual(self.calc.add (10 , 10), 20)
+		self.assertEqual(self.calc.add (-1,1),  0)
 
 	def test_subtract(self):
 		"""Return the difference between a and b"""
