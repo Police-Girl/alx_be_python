@@ -1,39 +1,26 @@
 import unittest
 from simple_calculator import SimpleCalculator
 
-class SimpleCalculator():
-	def add(a,b):
-		"""Return the sum of two numbers"""
-		return a + b
+class TestSimpleCalculator(unittest.TestCase):
+	def setUp(self):
+		"""Sets up a new SimpleCalculatoe instance for each test."""
+		self.calc = SimpleCalculator()
 
-	def subtract (a,b):
-		"""Return the difference of two numbers"""
-		return a - b
-
-	def multiply (a, b):
-		"""Return the product of two numbers"""
-		return a * b
-
-	def divide (a , b):
-		"""return the  modulus of two numbers"""
-		return a / b
-
-class TestAdd(unittest.TestCase):
 	def test_addition(self):
-		result = add(4, 5)
-		self.assertEqual(self.calc.add)
+		#result = add(4, 5)
+		self.assertEqual(self.calc.add (10 , 10), 20)
 
-	def test_subtract(self):
-		result = subtract(10, 4)
-		self.assertEqual(result , 6)
+	def test_subtraction(self):
+		#result = subtract(10, 4)
+		self.assertEqual(self.calc.subtract(10,4),6)
 
-	def test_multiply(self):
-		result = multiply(2 , 7)
-		self.assertEqual(result, 14)
+	def test_multiplication(self):
+		#result = multiply(2 , 7)
+		self.assertEqual(self.calc.multiply (2,7), 14)
 
-	def test_divide(self):
-		result = divide (4 , 2)
-		self.assertEqual(result, 0)
+	def test_division(self):
+		#result = divide (4 , 2)
+		self.assertEqual(self.calc.divide(20,2),10)
 
 if __name__=="__main__":
 	unittest.main()
