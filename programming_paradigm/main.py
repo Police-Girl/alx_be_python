@@ -16,7 +16,7 @@ def main():
     # Check if the result is a number (int or float), meaning success
     if isinstance(result, (int, float)):
         # If it's a number, format it into the expected sentence
-        print(f"The result of the division is {result}")
+        print(f"The result of the division is{result}")
     else:
         # If it's not a number, it must be an error message string from safe_divide
         print(result)
