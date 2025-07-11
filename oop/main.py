@@ -12,7 +12,6 @@ def main():
 
     # Deleting a book instance to trigger __del__
     del my_book
-
 if __name__ == "__main__":
     main()
 
