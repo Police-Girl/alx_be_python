@@ -1,0 +1,8 @@
+class Shape:
+	def area(self):
+	"""base class for geometric shapes"""
+	"""defines abstrat 'area method must be implemented raise NonImplementationError when called."""
+	raise NonImplementationError("subclass must implement the error method")
+
+	def __str__(self): # return string rep of the generic shape.
+		return "A generic geometric shape"
